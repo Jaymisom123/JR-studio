@@ -974,6 +974,7 @@ body {
 
 .footer-brand p {
     color: var(--text-gray);
+    margin-bottom: 1.5rem;
 }
 
 .footer-links {
@@ -984,7 +985,9 @@ body {
 
 .footer-column h4 {
     margin-bottom: 1rem;
-    color: var(--primary-purple);
+    color: var(--accent-orange);
+    font-size: 1.1rem;
+    font-weight: 600;
 }
 
 .footer-column ul {
@@ -999,15 +1002,18 @@ body {
     color: var(--text-gray);
     text-decoration: none;
     transition: var(--transition);
+    font-size: 0.9rem;
 }
 
 .footer-column a:hover {
-    color: var(--primary-purple);
+    color: var(--accent-orange);
+    transform: translateX(5px);
 }
 
 .social-links {
     display: flex;
     gap: 1rem;
+    flex-wrap: wrap;
 }
 
 .social-links a {
@@ -1020,10 +1026,12 @@ body {
     justify-content: center;
     color: white;
     transition: var(--transition);
+    font-size: 1.1rem;
 }
 
 .social-links a:hover {
     transform: translateY(-2px);
+    box-shadow: var(--shadow-glow);
 }
 
 .footer-bottom {
@@ -1246,15 +1254,41 @@ body {
 
     .footer-content {
         grid-template-columns: 1fr;
+        gap: 3rem;
         text-align: center;
     }
 
     .footer-brand .footer-logo {
         height: 75px;
+        margin-bottom: 1rem;
+    }
+
+    .footer-brand p {
+        margin-bottom: 2rem;
+        font-size: 0.95rem;
     }
 
     .footer-links {
-        margin-top: 2rem;
+        margin-top: 0;
+        grid-template-columns: 1fr;
+        gap: 2.5rem;
+        text-align: left;
+    }
+
+    .footer-column {
+        padding: 1.5rem;
+        background: rgba(31, 41, 55, 0.5);
+        border-radius: 12px;
+        border: 1px solid rgba(255, 107, 53, 0.1);
+    }
+
+    .footer-column:last-child {
+        text-align: center;
+    }
+
+    .social-links {
+        justify-content: center;
+        gap: 1.5rem;
     }
 
     .portfolio-grid {
@@ -1335,8 +1369,59 @@ body {
         font-size: 0.9rem;
     }
 
+    .footer {
+        padding: 3rem 0 1.5rem;
+    }
+
+    .footer-content {
+        gap: 2rem;
+    }
+
     .footer-brand .footer-logo {
-        height: 65px;
+        height: 60px;
+        margin-bottom: 0.8rem;
+    }
+
+    .footer-brand p {
+        font-size: 0.9rem;
+        margin-bottom: 1.5rem;
+        line-height: 1.5;
+    }
+
+    .footer-links {
+        gap: 2rem;
+    }
+
+    .footer-column {
+        padding: 1.2rem;
+    }
+
+    .footer-column h4 {
+        font-size: 1rem;
+        margin-bottom: 0.8rem;
+    }
+
+    .footer-column li {
+        margin-bottom: 0.4rem;
+    }
+
+    .footer-column a {
+        font-size: 0.85rem;
+    }
+
+    .social-links {
+        gap: 1.2rem;
+    }
+
+    .social-links a {
+        width: 36px;
+        height: 36px;
+        font-size: 1rem;
+    }
+
+    .footer-bottom {
+        padding-top: 1.5rem;
+        font-size: 0.85rem;
     }
 
     .portfolio-image {
@@ -1363,6 +1448,59 @@ body {
     .btn-primary, .btn-secondary, .btn-outline {
         padding: 0.9rem 1.5rem;
         font-size: 0.95rem;
+    }
+}
+
+/* Extra Small Devices */
+@media (max-width: 320px) {
+    .footer {
+        padding: 2.5rem 0 1rem;
+    }
+
+    .footer-content {
+        gap: 1.5rem;
+    }
+
+    .footer-brand .footer-logo {
+        height: 55px;
+    }
+
+    .footer-brand p {
+        font-size: 0.85rem;
+        margin-bottom: 1.2rem;
+    }
+
+    .footer-links {
+        gap: 1.5rem;
+    }
+
+    .footer-column {
+        padding: 1rem;
+        margin: 0 0.5rem;
+    }
+
+    .footer-column h4 {
+        font-size: 0.95rem;
+    }
+
+    .footer-column a {
+        font-size: 0.8rem;
+    }
+
+    .social-links {
+        gap: 1rem;
+        justify-content: center;
+    }
+
+    .social-links a {
+        width: 32px;
+        height: 32px;
+        font-size: 0.9rem;
+    }
+
+    .footer-bottom {
+        font-size: 0.8rem;
+        padding-top: 1.2rem;
     }
 }
 
