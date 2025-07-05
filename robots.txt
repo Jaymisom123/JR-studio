@@ -1,0 +1,61 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://jrstudio.com.br/sitemap.xml
+
+# Regiões Norte
+Allow: /sites-belem
+Allow: /sites-manaus
+Allow: /sites-porto-velho
+Allow: /sites-rio-branco
+Allow: /sites-macapa
+Allow: /sites-palmas
+
+# Regiões Nordeste
+Allow: /sites-salvador
+Allow: /sites-recife
+Allow: /sites-fortaleza
+Allow: /sites-sao-luis
+Allow: /sites-natal
+Allow: /sites-aracaju
+
+# Regiões Sudeste
+Allow: /sites-sao-paulo
+Allow: /sites-rio-de-janeiro
+Allow: /sites-belo-horizonte
+Allow: /sites-vitoria
+Allow: /sites-campinas
+
+# Regiões Sul
+Allow: /sites-curitiba
+Allow: /sites-porto-alegre
+Allow: /sites-florianopolis
+
+# Regiões Centro-Oeste
+Allow: /sites-brasilia
+Allow: /sites-cuiaba
+Allow: /sites-goiania
+Allow: /sites-campo-grande
+
+# Priorizar conteúdo de criação de sites
+User-agent: Googlebot
+Allow: /#services
+Allow: /#portfolio
+Allow: /
+
+# Bloquear conteúdo não relevante para SEO
+Disallow: /admin/
+Disallow: /privacidade/
+Disallow: /termos/
+
+# Otimização para bots de busca
+User-agent: Bingbot
+Allow: /
+
+# Configurações de imagens
+User-agent: Googlebot-Image
+Allow: /img/
+
+# Palavras-chave específicas
+Crawl-delay: 10
+# Foco em criação de sites, desenvolvimento web, design responsivo em todo o Brasil 
